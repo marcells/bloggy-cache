@@ -7,11 +7,7 @@ exports.init = function (engine) {
     engine.getAllEntries = function () {
         if (!cachedEnties) {
             cachedEnties = original();
-
-            console.log('Cached!');
         }
-
-        console.log('Return cached!')
 
         return cachedEnties;
     };
